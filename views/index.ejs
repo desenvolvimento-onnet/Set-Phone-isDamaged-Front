@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="/index.css">
+
+</head>
+
+<body>
+
+    <div class="root">
+        <div class="centerContent">
+
+            <input id="filtroPesquisa" type="text" placeholder="Filtro...">
+
+            <div class="tablePageChangerButtons">
+                <button id="previousTablePage" class="paginationButtonIcon"></button>
+                <select name="pageNumber" id="pageSelectionByNumber">
+                </select>
+                <button id="nextTablePage" class="paginationButtonIcon"></button>
+            </div>
+            <table class="tablePhoneInfo">
+                <thead>
+                    <tr>
+                        <th style="width: 2vw;">ID</th>
+                        <th style="width: 11vw;">IMEI 1</th>
+                        <th style="width: 11vw;">IMEI 2</th>
+                        <th style="width: 8vw;">SERIAL</th>
+                        <th style="width: fit-content;">MODELO</th>
+                        <th style="width: fit-content;">SUB MODELO</th>
+                        <th style="width: 8vw;">COR</th>
+                        <th style="width: 5vw;">ALOCADO</th>
+                        <th style="width: 5vw;">ESTRAGADO</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+
+            <input id="observationTextField" type="text" placeholder="Observação...">
+
+            <select name="phonesList" id="phonesList">
+                <option value=""></option>
+                <option value="Sim">Sim</option>
+                <option value="Não">Não</option>
+            </select>
+
+            <button id="setDamaged">Salvar</button>
+        </div>
+
+
+
+    </div>
+
+    <script src="/setEstragado.js"></script>
+</body>
+
+</html>
